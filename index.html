@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Webshop</title>
+</head>
+<body>
+
+    <div id="kinalat">
+        <table>
+            <thead>
+                <tr>
+                    <th>Termék</th>
+                    <th>Ár (Ft)</th>
+                    <th>Mennyiség</th>
+                    <th>Részösszeg</th>
+                    <th>Kép</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="termekek" onmouseover="nagyitKep('RAM.jpg')" onmouseout="visszaKep()">
+                    <td>Kingston HyperX Predator 16GB (4x4GB) DDR4 3200MHz</td>
+                    <td id="ar1">45000</td>
+                    <td><input type="number" id="mennyiseg1" value="0" min="0" oninput="szamol()"></td>
+                    <td id="r1">0</td>
+                    <td><img src="RAM.jpg" class="kiskep"></td>
+                </tr>
+                <tr class="termekek" onmouseover="nagyitKep('monitor.jpg')" onmouseout="visszaKep()">
+                    <td>LG 27MP59G-P Monitor</td>
+                    <td id="ar2">62000</td>
+                    <td><input type="number" id="mennyiseg2" value="0" min="0" oninput="szamol()"></td>
+                    <td id="r2">0</td>
+                    <td><img src="monitor.jpg" class="kiskep"></td>
+                </tr>
+                <tr class="termekek" onmouseover="nagyitKep('HDD.jpg')" onmouseout="visszaKep()">
+                    <td>Western Digital Red 3.5" 2TB 5400rpm SATA3</td>
+                    <td id="ar3">28000</td>
+                    <td><input type="number" id="mennyiseg3" value="0" min="0" oninput="szamol()"></td>
+                    <td id="r3">0</td>
+                    <td><img src="HDD.jpg" class="kiskep"></td>
+                </tr>
+                <tr class="termekek" onmouseover="nagyitKep('tap.jpg')" onmouseout="visszaKep()">
+                    <td>Chieftec Smart 500W(GPS-500A8)</td>
+                    <td id="ar4">46884</td>
+                    <td><input type="number" id="mennyiseg4" value="0" min="0" oninput="szamol()"></td>
+                    <td id="r4">0</td>
+                    <td><img src="tap.jpg" class="kiskep"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="kep">
+        <img id="nagykep" src="ures.jpg">
+    </div>
+
+    <div id="kosar">
+        <h2>Összesen: <span id="osszesen">0</span> Ft</h2>
+    </div>
+
+    <script src="kod.js"></script>
+</body>
+</html>
